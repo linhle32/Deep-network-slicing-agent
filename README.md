@@ -7,11 +7,11 @@
 ### Introduction
 
 5G radio access network (RAN) slicing aims to logically split an infrastructure into a set of self-contained
-programmable <b>RAN slices</b>. Each RAN slice is constituted by various virtual network functions (VNFs) distributed geographically in numerous substrate nodes. Below is an example of three virtual slices placed on top of a physical substrate network
+programmable <b>RAN slices</b>, usually by functionality. Each RAN slice is constituted by various virtual network functions (VNFs) distributed geographically in numerous substrate nodes. Below is an example of three virtual slices placed on top of a physical substrate network
 
 ![image](https://user-images.githubusercontent.com/5643444/232635967-67fae4bc-3ebb-4e5b-b02e-3b942dbc65cc.png)
 
-In this research, we propose a deep reinforcement learning RAN slicing scheme that maximizes the numbers of slices allocated from a demand set. More specifically, at each step of slicing, the current states of the substrate networks requested slices are observed to select a slice to accommodate. The agent consists of a self-attention block to analyze the interrelationship of slices during allocations. Th agent learns to maximize the number of accommodated slices using an explicitly designed reward function. An example of optimal and non-optimal solution is as follows.
+In this research, we develop a deep reinforcement learning based RAN slicing scheme that maximizes the numbers of slices allocated from a demand set. More specifically, at each step of slicing, the current states of the substrate networks requested slices are observed to select a slice to accommodate. The agent consists of a self-attention block to analyze the interrelationship of slices during allocations. Th agent learns to maximize the number of accommodated slices using an explicitly designed reward function. An example of optimal and non-optimal solution is as follows.
 
 ![image](https://user-images.githubusercontent.com/5643444/232636059-ed9cfadf-7e7a-4f52-85a0-a96527e1538d.png)
 
